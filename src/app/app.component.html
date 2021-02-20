@@ -17,8 +17,19 @@
   <strong>{{ "Hello" + " World" }}</strong>
 </p> -->
 
-<img [src]="img" alt="" />
+<!-- <img [src]="img" alt="" /> -->
 
+<button (click)="onClick()">Click me!</button>
+
+<input
+  type="text"
+  (keyup)="onInput($event)"
+  (blur)="onBlur(myInput.value)"
+  #myInput
+/>
+<p>
+  <strong>{{ inputValue }}</strong>
+</p>
 <hr />
 <app-post></app-post>
 <!-- <app-post></app-post> -->
