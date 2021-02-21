@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  backgroundToggle: boolean = false;
+  toggle: boolean = false;
 }
