@@ -6,9 +6,11 @@
   <hr />
 
   <app-post *ngFor="let p of posts" [post]="p">
-    <small *ngIf="p.text.length > 10; else short">Post is long</small>
-    <ng-template #short>
-      <small>Post is short</small>
-    </ng-template>
+    <div #info>
+      <small *ngIf="p.text.length > 10; else short">Post is long</small>
+      <ng-template #short>
+        <small>Post is short</small>
+      </ng-template>
+    </div>
   </app-post>
 </div>
