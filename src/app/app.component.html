@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Angular Component</h1>
 
-  <app-post-form></app-post-form>
+  <app-post-form (onAdd)="updatePosts($event)"></app-post-form>
 
   <hr />
 
