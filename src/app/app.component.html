@@ -1,7 +1,16 @@
 <div class="container">
   <h1>Angular Directives</h1>
 
-  <p appStyle>
+  <p
+    appStyle="red"
+    [dStyles]="{ border: '1px solid blue', borderRadius: '15px' }"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, non.
+  </p>
+  <p
+    appStyle="blue"
+    [dStyles]="{ border: '1px solid red', borderRadius: '15px' }"
+  >
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, non.
   </p>
 </div>
