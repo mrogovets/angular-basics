@@ -3,10 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { StyleDirective } from './direcrives/style.direcrive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StyleDirective,
   ],
   imports: [
     BrowserModule,
