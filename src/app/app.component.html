@@ -13,4 +13,30 @@
   >
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, non.
   </p>
+
+  <button class="btn" (click)="isVisible = !isVisible">Toggle</button>
+
+  <!-- <div *ngIf="isVisible" class="wrap">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+      dignissimos vitae perspiciatis quidem nostrum nisi hic maiores provident
+      ipsam porro!
+    </p>
+  </div> -->
+  <!-- <ng-template [ngIf]="isVisible">
+    <div class="wrap">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+        dignissimos vitae perspiciatis quidem nostrum nisi hic maiores provident
+        ipsam porro!
+      </p>
+    </div>
+  </ng-template> -->
+  <div class="wrap" *appIfnot="!isVisible">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+      dignissimos vitae perspiciatis quidem nostrum nisi hic maiores provident
+      ipsam porro!
+    </p>
+  </div>
 </div>
