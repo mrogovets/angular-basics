@@ -8,7 +8,8 @@ import { AppCounterService } from './services/app-counter.service';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, FormsModule],
-  providers: [AppCounterService],
+  // providers: [AppCounterService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
