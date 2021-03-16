@@ -36,21 +36,21 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" formGroupName="address">
       <h2>Адрес</h2>
 
       <div class="form-control">
         <label>Страна</label>
 
-        <select>
-          <option value="ru">Україна</option>
-          <option value="ua">Білорусь</option>
-          <option value="by">Московія</option>
+        <select formControlName="country">
+          <option value="ua">Україна</option>
+          <option value="by">Білорусь</option>
+          <option value="ru">Московія</option>
         </select>
       </div>
 
       <div class="form-control">
-        <input type="text" />
+        <input type="text" formControlName="city" placeholder="City" />
       </div>
 
       <button class="btn" type="button">Выбрать столицу</button>
