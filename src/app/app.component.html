@@ -15,6 +15,9 @@
         <small *ngIf="form.get('email').errors.email">
           Input correct email address
         </small>
+        <small *ngIf="form.get('email').errors.restrictedEmail">
+          Email {{ form.get("email").value }} is restricted
+        </small>
       </div>
     </div>
 
