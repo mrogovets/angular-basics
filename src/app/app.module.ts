@@ -3,9 +3,10 @@ import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SwitchComponent],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
