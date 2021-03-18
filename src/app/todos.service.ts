@@ -31,4 +31,12 @@ export class TodoService {
       `https://jsonplaceholder.typicode.com/todos/${id}`
     );
   }
+  completeTodo(id: number): Observable<Todo> {
+    return this.http.put<Todo>(
+      `https://jsonplaceholder.typicode.com/todos/${id}`,
+      {
+        completed: true,
+      }
+    );
+  }
 }
