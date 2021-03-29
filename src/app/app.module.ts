@@ -1,28 +1,31 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import {BrowserModule} from '@angular/platform-browser'
+import {NgModule} from '@angular/core'
 
-import { AppComponent } from "./app.component";
-import { FormsModule } from "@angular/forms";
-import { AboutComponent } from "./about/about.component";
-import { HomeComponent } from "./home/home.component";
-import { PostsComponent } from "./posts/posts.component";
-import { PostComponent } from "./post/post.component";
-import { AboutExtraComponent } from "./about-extra/about-extra.component";
-import { AppRoutingModule } from "./app-routing.module";
-import { ErrorPageComponent } from './error-page/error-page.component';
+import {AppComponent} from './app.component'
+import {FormsModule} from '@angular/forms'
+import {HomePageComponent} from './home-page/home-page.component'
+import {AppRoutingModule} from './app-routing.module'
+import {AboutPageComponent} from './about-page/about-page.component'
+import {AboutExtraPageComponent} from './about-page/about-extra-page/about-extra-page.component'
+import {ColorDirective} from './shared/color.directive'
+import {PageNamePipe} from './shared/page-name.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    HomeComponent,
-    PostsComponent,
-    PostComponent,
-    AboutExtraComponent,
-    ErrorPageComponent,
+    HomePageComponent,
+    AboutPageComponent,
+    AboutExtraPageComponent,
+    ColorDirective,
+    PageNamePipe
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
