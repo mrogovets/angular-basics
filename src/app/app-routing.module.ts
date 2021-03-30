@@ -8,7 +8,11 @@ import { HomePageComponent } from "./home-page/home-page.component";
       { path: "", component: HomePageComponent, pathMatch: "full" },
       {
         path: "about",
-        loadChildren: "./about-page//about-page.module#AboutPageModule",
+        // loadChildren: "./about-page//about-page.module#AboutPageModule",
+        loadChildren: () =>
+          import("./about-page//about-page.module").then(
+            (m) => m.AboutPageModule
+          ),
       },
     ]),
   ],
