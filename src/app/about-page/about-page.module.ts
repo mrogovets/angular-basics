@@ -12,7 +12,7 @@ import { AboutPageComponent } from "./about-page.component";
     SharedModule,
     RouterModule.forChild([
       {
-        path: "about",
+        path: "",
         component: AboutPageComponent,
         children: [{ path: "extra", component: AboutExtraPageComponent }],
       },
